@@ -13,8 +13,8 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'cd0d9b0dc3d14ab8a51cdae27f5a02f2'; // Your client id
-var client_secret = 'dae8316ac8884aacb91c4bd7d612d922'; // Your secret
+var client_id = process.env.CLIENT_ID; // Your client id
+var client_secret = process.env.CLIENT_SECRET; // Your secret
 var redirect_uri = 'https://spotify-mosaic.now.sh/callback'; // Your redirect uri
 
 /**
