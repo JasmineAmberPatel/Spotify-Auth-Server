@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = process.env.CLIENT_ID; // Your client id
 var client_secret = process.env.CLIENT_SECRET; // Your secret
-var redirect_uri = 'https://spotify-mosaic.now.sh/callback'; // Your redirect uri
+var redirect_uri = 'https://jasmine-spotify.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
