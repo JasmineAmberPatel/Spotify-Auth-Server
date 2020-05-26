@@ -7,7 +7,7 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 require('dotenv').config();
- var express = require('express'); // Express web server framework
+var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var cors = require('cors');
 var querystring = require('querystring');
@@ -104,7 +104,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('https://spotify-mosaic.now.sh//#' +
+        res.redirect('https://jasmine-spotify.herokuapp.com/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
